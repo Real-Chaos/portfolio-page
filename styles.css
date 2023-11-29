@@ -95,7 +95,7 @@ nav ul li:hover {
 /* ABOUT ME */
 
 .section-title {
-	margin-top: 50px;
+	padding-top: 50px;
 	text-align: center;
 	padding: 20px 0;
 }
@@ -103,12 +103,13 @@ nav ul li:hover {
 .about-me-card-section {
 	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
 		url('https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHN0YXJ5fGVufDB8fDB8fHww&w=1000&q=80');
-	clip-path: polygon(0 0, 100% 0, 100% 45%, 0 100%);
+	/* clip-path: polygon(0 0, 100% 0, 100% 45%, 0 100%); */
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 80px;
-	z-index: -1 !important;
+	z-index: -1;
+  position: relative;
 }
 
 .about-me-card {
@@ -117,9 +118,8 @@ nav ul li:hover {
 	align-items: center;
 	color: black;
 	text-align: center;
-	z-index: 7;
-  position: absolute;
- 
+	z-index: 1;
+  /* position: absolute; */
 }
 
 .about-me-card .card-img img {
@@ -260,4 +260,99 @@ nav ul li:hover {
 }
 .my-project:nth-child(even) img:hover {
   transform: translate(20px, 20px);
+}
+
+
+.contact-section {
+	/* background-color: #242424; */
+}
+
+
+.contact-section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.contact-form {
+	display: flex;
+	padding: 100px 0;
+	align-items: center;
+}
+
+.form {
+	display: grid;
+	background: #0f0b18;
+	padding: 20px 30px;
+	box-shadow: rgba(59, 59, 59, 0.35) 0px 5px 15px;
+	min-height: 350px;
+	text-align: center;
+}
+
+.form input, textarea {
+	padding: 10px 20px;
+	outline: none;
+	background: transparent;
+	border: 1px solid #c770f0;
+	border-radius: 5px;
+	margin-top: 10px;
+	color: white;
+	resize: vertical;
+}
+
+div.contact-info {
+	height: 500px;
+	background: #011f38;
+	padding: 10px 30px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	text-align: center;
+}
+
+.contact-info h2 {
+	margin: 10px 0 25px 0;
+}
+
+.form button {
+	margin-top: 20px;
+	padding: 15px;
+	background: #c770f0;
+	color: white;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+.contact-detail {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-top: 5px;
+}
+
+.contact-detail .icon {
+	background-color: #151515;
+	height: 30px;
+	width: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	padding: 20px;
+}
+
+footer {
+	padding: 50px;
+	background-color: #272a34;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	gap: 20px;
+}
+
+footer .icons {
+	font-size: 30px;
+	display: flex;
+	gap: 20px;
 }
